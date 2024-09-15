@@ -1,0 +1,112 @@
+*{
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+
+body{
+background-color:var(--yellow);
+}
+:root{
+--yellow:hsl(47, 88%, 63%);
+--white:hsl(0, 0%, 100%);
+--gray5:hsl(0, 0%, 42%);
+--gray: hsl(0, 0%, 7%);
+}
+/* main{
+min-height:100vh;
+} */
+main .container{
+display: grid;
+place-items: center;
+padding-top:3rem;
+padding-right:10px;
+padding-left:10px;
+padding-right:1rem;
+min-height:100vh;
+}
+
+main .main-card{
+background-color:var(--white);
+padding:1rem 0;
+border-radius:20px;
+box-shadow:10px 10px 5px var(--gray);
+border: 1px solid var(--gray);
+}
+
+main .container .main-card .cover{
+width:90%;
+margin: 0 auto;
+}
+
+main .cover .article{
+width:350px;
+margin:0 auto;
+}
+main .cover .article img{
+width:100%;
+border-radius:10px;
+margin:0 auto;
+}
+
+main .cover .learning{
+background-color:var(--yellow);
+padding:0.5rem;
+color:var(--gray);
+font-size:1.2rem;
+max-width:100px;
+border-radius:5px;
+text-align:center;
+font-weight: bold;
+margin-top:0.5rem;
+font-family:"Figtree", sans-serif;
+}
+main .cover .date{
+padding-top:0.5rem;
+font-family: "Figtree", sans-serif;
+color:var(--gray);
+}
+
+main .cover .course{
+color:var(--gray);
+margin-top:1rem;
+font-family:"Figtree", sans-serif;
+}
+
+main .cover .course:hover{
+color:var(--yellow);
+}
+main .cover .texts{
+font-family:"Figtree", sans-serif;
+color:var(--gray5);
+}
+main .cover .student{
+padding-top:1.2rem;
+display: flex;
+align-items: center;
+}
+main .cover .student img{
+width:50px;
+}
+main .cover .student p{
+color:var(--gray);
+margin-left:10px;
+font-size:1.2rem;
+font-family: "Figtree", sans-serif;
+}
+
+@media screen and (max-width:400px){
+main .cover .article{
+width:340px;
+}
+main .container .main-card .cover{
+width:95%;
+margin:auto;
+}
+
+}
+@media screen and (max-width:375px){
+main .cover .article{
+width:320px;
+}
+}
